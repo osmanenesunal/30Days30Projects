@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --left-bg-color: rgba(177, 162, 170, 0.8);
+  --rigt-bg-color: rgba(237, 146, 61, 0.8);
+  --left-hover-btn-bg-color: rgba(139, 139, 139, 0.8);
+  --right-hover-btn-bg-color: rgba(208, 107, 12, 0.8);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed-time: 1000ms;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", "Sans-serif";
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+}
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.split.left {
+  left: 0;
+  background: no-repeat center/cover
+    url("https://wallpaperaccess.com/full/1288069.jpg");
+}
+.split.left::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--left-bg-color);
+}
+.split.right {
+  right: 0;
+  background: no-repeat center/cover
+    url("https://wallpaperaccess.com/full/1465156.jpg");
+}
+.split.right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--rigt-bg-color);
+}
+.title {
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+  white-space: nowrap;
+}
+.btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid #fff;
+  font-size: 1.5rem;
+  background-color: transparent;
+  white-space: nowrap;
+  font-weight: bold;
+  padding: 1.5rem;
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+}
+
+.split.left .btn:hover {
+  background-color: var(--left-hover-btn-bg-color);
+  transition: 0.2s ease-in;
+  border: transparent;
+  color: black;
+}
+
+.split.right .btn:hover {
+  background-color: var(--right-hover-btn-bg-color);
+  transition: 0.2s ease-in;
+  border: transparent;
+  color: black;
+}
+.hover-left .left {
+  width: var(--hover-width);
+}
+.hover-left .right {
+  width: var(--other-width);
+}
+.hover-right .right {
+  width: var(--hover-width);
+}
+.hover-right .left {
+  width: var(--other-width);
+}
+.split.right,
+.split.left,
+.split.right::before,
+.split.left::before {
+  transition: all var(--speed-time) ease-in-out;
+}
