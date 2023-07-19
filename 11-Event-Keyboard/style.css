@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background-color: #fefae0;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.key {
+  border: 2px solid #bc6c25;
+  background-color: white;
+  display: inline-flex;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  min-width: 150px;
+  position: relative;
+}
+.key small {
+  position: absolute;
+  top: -24px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #bc6c25;
+font-size: 18px;
+}
