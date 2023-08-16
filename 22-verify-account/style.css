@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Merriweather:ital,wght@1,700&display=swap');
+:root{
+    --font-color:#e96b46
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-image: linear-gradient(120deg ,  rgb(136, 176, 216) , rgb(156, 226, 236));
+}
+
+.container{
+    background-color: #fff;
+    border: 10px;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    box-shadow: 8px 8px 9px rgba(0, 0, 0, 0.9);
+}
+.container img{
+    height: 200px;
+}
+.container h2{
+    letter-spacing: 2px;
+}
+.container p{
+    color: rgb(76, 83, 90);
+    font-size: 16px;
+}
+.container p span{
+    display: block;
+    color: var(--font-color);
+    font-size: 14px;
+    font-weight: bold;
+}
+.code-container{
+    margin: 3rem 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.code{
+    font-family: inherit;
+    width: 50px;
+    height: 70px;
+    margin: 1%;
+    font-size: 3rem;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.code::-webkit-inner-spin-button, .code::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.code:focus{
+    outline: none;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.6);
+}
+.code:valid{
+    border-color: var(--font-color);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+small{
+    color: rgb(110, 107, 107);
+}
+small a{
+    font-weight: bold;
+    color: var(--font-color);
+}
+.back{
+    margin: 20px;
+}
+
+.back a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--font-color);
+}
