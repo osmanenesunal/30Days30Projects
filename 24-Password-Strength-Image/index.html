@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    referrerpolicy="no-referrer"    
+  />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Image</title>
+    <script src="app.js" defer></script>
+    
+</head>
+<body>
+   <div class="background" id="background"></div>
+    <div class="bg-white rounded p-10 text-center shadow-md">
+        <h1 class="text-lg font-bold text-purple-700">
+            Sign Up
+        </h1>
+        <p class="text-sm text-gray-700">
+            Looks like you don't have an account.Let's create a new account for <span class="text-purple-500 font-bold">o.enesunal@gmail.com</span>
+        </p>
+        <div class="my-4 text-left">
+            <label for="email" id="email" class="text-gray">Email:</label>
+            <input type="email" id="email" placeholder="Please enter E-mail" required class="border block w-full p-2 mt-2 rounded">
+        </div>
+
+
+        <div class="my-4 text-left">
+            <label for="password" id="passwordLabel" class="text-gray">Password:</label>
+            <input type="password" placeholder="Please enter Password" id="password"  required class="border block w-full p-2 mt-2 rounded">
+        </div>
+        <button type="submit" class="bg-purple-700 text-white py-2 mt-2 inline-block w-full rounded">Continue</button>
+
+    </div>
+</body>
+</html>
