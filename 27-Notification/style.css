@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.button{
+    background-color: tomato;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius : 1rem;
+    font-size: 1.2rem;
+    color: #fff;                    
+    letter-spacing: 2px;    
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    outline: none;
+}
+button:active{
+    transform: scale(0.95);
+}
+
+.notification-container{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.notification{
+    /* background-color: blueviolet; */
+    padding: 0.5rem  1rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    color: whitesmoke;
+}
+.notification.red{
+    background-color: red;
+}
+.notification.purple{
+    background-color: purple;
+}
+.notification.black{
+    background-color:black;
+}
+.notification.grey{
+    background-color: grey;
+}
+.notification.blue{
+    background-color: blue;
+}
+.notification.green{
+    background-color: green;
+}
